@@ -1,0 +1,45 @@
+.container__testimonio{
+    /* width: 1170px; */
+    width: min(100%, 1170px);
+    height: 368px;
+    margin: 10px 10px 50px;
+    display: flex;
+    flex: 0 1 1170px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 13px 1px rgb(0, 0, 0,10%);
+
+}
+.img__testimonio{
+    height: 100%;
+    width: auto;
+}
+
+.container__testimonio-text{
+    text-align: center;
+    padding: 2.5rem;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    width: 100%;
+    /* font-size: 18px; */
+    line-height: 1.5rem;
+
+}
+
+.testimonio__name{
+    font-size: 1.3rem;
+}
+
+.testimonio__job{
+    font-size: 1.3rem;
+    margin-top: 15px;
+    padding-bottom: 1.875rem;
+}
+.testimonio__text{
+    font-size: 1.1rem;
+    text-align: justify;
+}
+/* .bold{
+    font-weight: 700;
+} */
