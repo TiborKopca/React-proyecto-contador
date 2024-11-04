@@ -2,18 +2,29 @@ import logoTK from "./img/TKlogo.svg";
 import "./App.css";
 import Button from "./components/Button";
 import { useState } from "react";
+import Counter from "./components/Counter";
 
 function App() {
   const [numClicks, setNumClicks] = useState(0);
+  const [fade, setFade] = useState(false);
 
   //BUTTON HANDLER
   const handleClick = () => {
-    setNumClicks(numClicks + 1);
-    console.log("number of clicks: ", numClicks);
+    setFade(true);
+    setTimeout( () => {
+      setNumClicks(numClicks + 1); 
+      setFade(false); //Triggers CSS transition
+    }, 200); // Match transition duration in CSS
+    
+    // console.log("number of clicks: ", numClicks);
   };
   const handleClickReset = () => {
-    setNumClicks(0);
-    console.log("Reset, number of clicks: ", numClicks);
+    setFade(true);
+    setTimeout( () => {
+      setNumClicks(0);
+      setFade(false); //Triggers CSS transition
+    }, 200); // Match transition duration in CSS
+    // console.log("Reset, number of clicks: ", numClicks);
   };
 
 
@@ -26,10 +37,12 @@ function App() {
           alt="logo Tibor Kopca" />
       </div>
       <main className="main__container">
-        <h1>Contador de clicks</h1>
-        {/* <Contador numClicks= {numClicks} /> */}
+        <h1>Click Counter</h1>
+        <Counter 
+          numClicks= { numClicks } 
+          fade={ fade } />
         <Button 
-          text="Start Counter" 
+          text="Click +1" 
           isButtonClick={true}
           handleClick={ handleClick }
           />

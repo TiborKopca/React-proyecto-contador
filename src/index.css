@@ -4,6 +4,7 @@
   --background-color-dark-alt:rgb(24 107 112);
   --text-color-light:rgb(245, 246, 247);
   --text-color-dark:rgb(27, 27, 50);
+  --shadow-color-black: rgb(0, 0, 0);
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -78,6 +79,6 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: var(--background-color-light);
   }
 } 

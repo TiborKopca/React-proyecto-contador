@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import "./Button.css"; // Import the CSS file
 
 
-function Button({ text , isButtonClick, handleClick }) {
+function Button({ text , isButtonClick, handleClick}) {
   return (
     <button 
     className={ isButtonClick ? "button button-click" : "button button-reiniciate" } 

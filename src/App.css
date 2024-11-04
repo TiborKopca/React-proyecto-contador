@@ -27,7 +27,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .logo {
@@ -59,7 +59,7 @@ body {
 }
 /* LOGO END */
 .app {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,7 +69,8 @@ body {
 }
 
 .main__container {
-  min-height: 37.5rem;
+  /* min-height: 37.5rem; */
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;

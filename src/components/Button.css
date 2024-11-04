@@ -1,19 +1,40 @@
-button {
+.button {
   display: inline-block;
 
-  background-color: rgb(173 173 173);
   color: rgb(255, 255, 255);
 
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
 
   padding: 15px 32px;
-  margin: 4px 2px;
+  margin: 4px 4px;
 
   text-align: center;
   text-decoration: none;
   font-size: 1.5em;
 
   cursor: pointer;
+  
+
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  /* filter:invert(1); */
+ transition: all 0.3s ease-in-out;
+  scale: 1.02;
+  font-size: calc(1.5em + 0.5vw);
+}
+.button-click, .button-click:not(:focus){
+  background-color: rgb(173 173 173);
   box-shadow: 2px 2px 20px rgb(0, 0, 0);
+}
+.button-click:hover{
+    background-color: rgb(97, 97, 97)
+}
+.button-reiniciate, .button-reiniciate:not(:focus) {
+  background-color: rgb(228, 107, 107);
+  box-shadow: -2px 2px 20px rgb(0, 0, 0);
+}
+.button-reiniciate:hover {
+    background-color: rgb(155, 54, 54)
 }

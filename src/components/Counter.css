@@ -1,0 +1,37 @@
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  width: 100%;
+  height: auto;
+  font-size: 8em;
+  color: var(--text-color-light);
+  font-weight: 700;
+  text-shadow: 0px 0px 6px var(--shadow-color-black);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.counter.fadeclass {
+    opacity: 0;
+}
+
+
+
+
+/* TESTING ANIMATIONS */
+.counter.visible {
+  opacity: 1;
+}
+.counter.hidden {
+  opacity: 0;
+}
+
+@keyframes newnumber {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
